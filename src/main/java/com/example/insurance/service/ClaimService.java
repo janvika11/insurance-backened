@@ -41,7 +41,7 @@ public class ClaimService {
             return "Error: Incident date cannot be in the future";
         }
 
-        // Save claim with PENDING status
+        // Save claim with pending status
         Claim savedClaim = claimRepository.save(claim);
 
         return "Claim submitted successfully with ID: " + savedClaim.getId() +

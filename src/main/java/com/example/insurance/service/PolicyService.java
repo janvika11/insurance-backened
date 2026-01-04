@@ -18,12 +18,12 @@ public class PolicyService {
     private CustomerRepository customerRepository;
 
     public String createPolicy(Policy policy) {
-        // Validation 1: Check if customer exists
+        // Validation 1: Checks if customer exists
         if (!customerRepository.existsById(policy.getCustomerId())) {
             return "Error: Customer with ID " + policy.getCustomerId() + " not found";
         }
 
-        // Validation 2: Check if customer already has this policy type
+        // Validation 2: Checks if customer already has this policy type
         if (policyRepository.existsByCustomerIdAndPolicyType(
                 policy.getCustomerId(), policy.getPolicyType())) {
             return "Error: Customer already has a " + policy.getPolicyType() + " policy";
