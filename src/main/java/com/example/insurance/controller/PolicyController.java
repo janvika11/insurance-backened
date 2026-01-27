@@ -19,7 +19,7 @@ public class PolicyController {
         return policyService.createPolicy(policy);
     }
 
-    // Get policy by ID
+
     @GetMapping("/{id}")
     public Policy getPolicy(@PathVariable Long id) {
         return policyService.getPolicyById(id);

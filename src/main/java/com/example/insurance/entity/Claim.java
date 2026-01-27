@@ -26,13 +26,11 @@ public class Claim {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    // Constructor
     public Claim() {
         this.createdAt = LocalDateTime.now();
         this.status = "PENDING"; // Default status
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }

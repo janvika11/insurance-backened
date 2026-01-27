@@ -22,12 +22,12 @@ public class Customer {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    // Constructor
+
     public Customer() {
         this.createdAt = LocalDateTime.now();
     }
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }

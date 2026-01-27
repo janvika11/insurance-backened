@@ -93,11 +93,9 @@ public class PaymentService {
         return "Payment refunded successfully. Transaction ID: " + payment.getTransactionId();
     }
 
-    // Simulate payment gateway (returns success/failure randomly for demo)
-    // In real application, this would integrate with Stripe, PayPal, Razorpay, etc.
+    //return true as of now
     private boolean simulatePaymentGateway(Payment payment) {
-        // For demo purposes, we'll always return success
-        // In production, you'd call actual payment gateway API here
+
         return true;
     }
 

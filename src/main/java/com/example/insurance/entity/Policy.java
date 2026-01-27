@@ -25,12 +25,12 @@ public class Policy {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    // Constructor
+
     public Policy() {
         this.createdAt = LocalDateTime.now();
     }
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }

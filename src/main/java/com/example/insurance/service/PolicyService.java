@@ -83,7 +83,7 @@ public class PolicyService {
         return "Policy deleted successfully";
     }
 
-    // Business Logic: Calculate coverage limit based on policy type
+    //  Calculate coverage limit based on policy type
     private Double calculatePolicyLimit(String policyType, Double premium) {
         switch (policyType.toUpperCase()) {
             case "HEALTH":
